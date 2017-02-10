@@ -23,7 +23,15 @@ def webhook():
     print(json.dumps(req, indent=4))
 
     #res = processRequest(req)
-    res = "Test result"
+    
+    speech = "Test result"
+    res = {
+        "speech": speech,
+        "displayText": speech,
+        # "data": data,
+        # "contextOut": [],
+        "source": "apiai-weather-webhook-sample"
+    }
 
     res = json.dumps(res, indent=4)
     # print(res)
