@@ -29,6 +29,11 @@ def sendFCM():
     print(r)
     return r
 
+def test():
+    URL = 'http://www.tistory.com'
+    response = requests.get(URL)
+    print(response.status_code)
+    return None
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
