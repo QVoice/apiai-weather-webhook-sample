@@ -37,7 +37,7 @@ def test():
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
-    test()
+    #test() # find other way to request
     
     req = request.get_json(silent=True, force=True)
 
